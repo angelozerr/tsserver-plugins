@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+var fs = require("fs"),
+	vm = require("vm"),
+	mod = require('module')
+
+// var tsserverDirname = //__dirname + '/../lib/';
+var tsserverDirname = process.argv.indexOf("--tsserverDirname");
+if (tsserverDirname > -1) {
+  tsserverDirname = process.argv[tsserverDirname + 1] + '/lib/';
+}
+
+// concat the tsserver.js
+var src = fs.readFileSync(__dirname  + '/../src/before-tsserver.js');
+src += '\n';
+src += fs.readFileSync(tsserverDirname  + 'tsserver.js');
+
+vm.runInThisContext(mod.wrap(src))(exports, require, module, __filename, tsserverDirname);

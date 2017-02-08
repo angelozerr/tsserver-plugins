@@ -62,5 +62,4 @@ Declare plugins in your tsconfig.json:
 
 Start tsserver with `tsserver-plugins/bin/tsserver-plugins` instead of starting with `typescript/bin/tsserver`. After that you will benefit with plugins language service. Here a sample with Angular2 and tslint language service:
 
-
-   
+![Language service demo](images/Angular2Demo.gif)

@@ -8,5 +8,8 @@
 		"tsserver",
 		"plugins"
 	],
-	"main": "./bin/tsserver-plugins"
+	"main": "./bin/tsserver-plugins",
+	"scripts": {
+		"publish": "node ./scripts/git-tag.js"
+	}
 }

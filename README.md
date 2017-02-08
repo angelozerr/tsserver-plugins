@@ -1,3 +1,7 @@
+# tsserver-plugins
+
+[![NPM version](https://img.shields.io/npm/v/tsserver-plugins.svg)](https://www.npmjs.org/package/tsserver-plugins)  
+
 # Language Service Plugins with Proxies
 
 [Language Service Plugins with Proxies](https://github.com/Microsoft/TypeScript/issues/11976) is [planned for the future of TypeScript](https://github.com/Microsoft/TypeScript/wiki/Roadmap#future) (TypeScript 2.4 ?). This feature gives the capability to extend TypeScript tsserver completion, definition, diagnostics, etc with custom plugins. Today it exists 2 plugins :
